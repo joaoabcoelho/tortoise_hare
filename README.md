@@ -1,6 +1,6 @@
 # tortoise_hare
 
-This is my solution to the FiveThirtyEight Riddler classic puzzle of 18/07/2020: https://fivethirtyeight.com/features/can-the-hare-beat-the-tortoise/
+This is my solution to the FiveThirtyEight Riddler classic puzzle of 17/07/2020: https://fivethirtyeight.com/features/can-the-hare-beat-the-tortoise/
 
 The problem states the road is magic and stretches every minute to become 10 miles longer. If we redefine the units every time this happens, we can instead think of the road as having a fixed length of 10 units, but the speed of the cars is reduced by a factor 1/n at the beginnning of the n-th minute. If we start at t=0, as the tortoise does, she will cover a distance sum(1/k for k from 1 to n) = H_n in n minutes, where H_n is the n-th harmonic number. The total time for the tortoise is then given by the largest n such that H_n < 10, which is given by n=12366, plus a small correction (10-H_n)*(n+1) ~ 0.468 to reach the finish line.
 
