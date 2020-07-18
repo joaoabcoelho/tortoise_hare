@@ -32,7 +32,7 @@ double get_time(double v, double w){
 
 void print_time(double t, std::string prefix=""){
 
-  std::string suffix = "%.2f\n";
+  std::string suffix = "%.2fs\n";
 
   double sec = 60*(t - int(t));
   if(t<1){
@@ -72,9 +72,6 @@ int main(int argc, char* argv[]){
   double vh = 1.25;
   if(argc>1) vh = std::stoi(argv[1])/60.;
 
-  printf("%d\n", argc);
-  printf("%f\n", vh);
-
   double ttl = get_time(1,0);
   
   double w0 = 0;
@@ -90,7 +87,7 @@ int main(int argc, char* argv[]){
     hr = get_time(vh, w0);
   }
   
-  printf("Solution found in %d steps with error = %.1g\n", steps, 1-hr/ttl);
+  //printf("Solution found in %d steps with error = %.1g\n", steps, 1-hr/ttl);
   
   setlocale(LC_NUMERIC, "");
   printf("Total distance: %'d miles\n", 10*int(ttl+1));
