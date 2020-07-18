@@ -70,7 +70,7 @@ void print_time(double t, std::string prefix=""){
 int main(int argc, char* argv[]){
 
   double vh = 1.25;
-  if(argc>1) vh = std::stoi(argv[1])/60.;
+  if(argc>1) vh = std::stof(argv[1])/60.;
 
   double ttl = get_time(1,0);
   
