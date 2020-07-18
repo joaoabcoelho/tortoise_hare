@@ -8,7 +8,7 @@ For the hare, we have an initial waiting period of w minutes. Defining k0 = ceil
 
 Here I took a more direct approach of simulating the race as described in the puzzle and finding the required waiting time for any hare speed v using Newton's method. 
 
-At 75 mph, the hare needs to wait 3m 40s before starting in order to finish at the same time as the tortoise. They will both cross the finish line in 8d 14h 6m 28.09s!
+At 75 mph, the hare needs to wait exactly 3m 40s before starting in order to finish at the same time as the tortoise. They will both cross the finish line in 8d 14h 6m 28.09s!
 
 Here's how the waiting time depends on the speed of the hare:
 
